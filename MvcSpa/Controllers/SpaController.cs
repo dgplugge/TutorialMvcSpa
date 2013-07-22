@@ -22,7 +22,7 @@ namespace MvcSpa.Controllers
 
         public ViewResult List()
         {
-            var processList = from p in Process.GetProcesses() where p.ProcessName.StartsWith("a")  select p;
+            var processList = from p in Process.GetProcesses() where p.ProcessName.StartsWith("s")  select p;
 
             ViewData.Model = processList.ToList();
 
